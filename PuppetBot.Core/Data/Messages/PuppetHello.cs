@@ -6,11 +6,11 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PuppetBot.Data;
+namespace PuppetBot.Data.Messages;
 
 
 public sealed class PuppetHello
 {
     public Version ClientVersion { get; set; } = Assembly.GetEntryAssembly()?.GetName().Version ?? new(1, 0);
-    
+
 }

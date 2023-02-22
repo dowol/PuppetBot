@@ -1,8 +1,11 @@
 using PuppetBot.Server.Utilities;
+using PuppetBot.Data.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+builder.Services.AddSignalR()
+    .AddJsonProtocol(opt => opt.PayloadSerializerOptions.Initialize());
 
 if (builder.Environment.IsDevelopment())
 {
@@ -25,5 +28,7 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHubs();
 
 app.Run();

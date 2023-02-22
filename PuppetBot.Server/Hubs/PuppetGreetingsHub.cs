@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.SignalR;
-using PuppetBot.Data;
+using PuppetBot.Data.Messages;
 using System.Security.Cryptography.X509Certificates;
 
 namespace PuppetBot.Server.Hubs;

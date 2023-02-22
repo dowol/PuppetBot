@@ -1,4 +1,6 @@
-﻿namespace PuppetBot.Server.Utilities
+﻿using PuppetBot.Server.Hubs;
+
+namespace PuppetBot.Server.Utilities
 {
     public static class WebHostExtensions
     {
@@ -8,6 +10,12 @@
             {
                 Port = port
             }.Uri.ToString());
+        }
+
+        public static void MapHubs(this WebApplication app)
+        {
+            app.MapHub<PuppetGreetingsHub>("/puppet");
+            
         }
     }
 }
