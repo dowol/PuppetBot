@@ -2,8 +2,6 @@ using PuppetBot.Server.Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
 
 if (builder.Environment.IsDevelopment())
@@ -13,12 +11,11 @@ if (builder.Environment.IsDevelopment())
 }
 else
 {
-    builder.WebHost.ListenFromPort(builder.Configuration.GetSection("Server:Port").Get<int>());
+    builder.WebHost.ListenFromPort(builder.Configuration.GetSection("Server:Port").Get<int?>() ?? 65001);
 }
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
