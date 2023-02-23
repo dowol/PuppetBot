@@ -12,5 +12,7 @@ namespace PuppetBot.Data.Messages;
 public sealed class PuppetHello
 {
     public Version ClientVersion { get; set; } = Assembly.GetEntryAssembly()?.GetName().Version ?? new(1, 0);
+    public VersionRange AvailableServerVersion { get; set; } = new();
+
 
 }

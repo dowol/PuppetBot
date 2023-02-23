@@ -1,4 +1,4 @@
-﻿using PuppetBot.Server.Hubs;
+﻿
 
 namespace PuppetBot.Server.Utilities
 {
@@ -14,7 +14,6 @@ namespace PuppetBot.Server.Utilities
 
         public static void MapHubs(this WebApplication app)
         {
-            app.MapHub<PuppetGreetingsHub>("/puppet");
             
         }
     }

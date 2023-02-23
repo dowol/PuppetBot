@@ -11,9 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Root", "Project Roo
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
-		README.md = README.md
 		LICENSE.md = LICENSE.md
+		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuppetBot.Client", "PuppetBot.Client\PuppetBot.Client.csproj", "{8032C7CD-F91D-4E7F-976C-7AB27F5E6267}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{591888EC-88D3-4613-8EB3-10B1F18347C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{591888EC-88D3-4613-8EB3-10B1F18347C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{591888EC-88D3-4613-8EB3-10B1F18347C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8032C7CD-F91D-4E7F-976C-7AB27F5E6267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8032C7CD-F91D-4E7F-976C-7AB27F5E6267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8032C7CD-F91D-4E7F-976C-7AB27F5E6267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8032C7CD-F91D-4E7F-976C-7AB27F5E6267}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
