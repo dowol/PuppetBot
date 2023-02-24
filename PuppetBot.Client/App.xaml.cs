@@ -13,5 +13,17 @@ namespace PuppetBot.Client
     /// </summary>
     public partial class App : Application
     {
+        private IHost host;
+        public App()
+        {
+
+        }
+
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            
+        }
     }
+
+
 }

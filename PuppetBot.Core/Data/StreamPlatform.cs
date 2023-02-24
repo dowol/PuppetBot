@@ -8,11 +8,10 @@ namespace PuppetBot.Data;
 
 public sealed partial class StreamPlatform
 {
-    public string ID { get; }
-    public string Name { get; }
+    public string Name { get; init; }
+    public Uri URL { get; init; }
 
-    internal StreamPlatform(string identify, string name, Uri url)
-    {
-
-    }
+#pragma warning disable CS8618
+    private StreamPlatform() { }
+#pragma warning restore CS8618
 }
