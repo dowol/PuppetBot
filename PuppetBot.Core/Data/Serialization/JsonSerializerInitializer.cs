@@ -16,5 +16,8 @@ public static class JsonSerializerInitializer
         options.DictionaryKeyPolicy = JsonNamingPolicy.CamelCase;
 
         options.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault;
+
+        options.Converters.Clear();
+
     }
 }

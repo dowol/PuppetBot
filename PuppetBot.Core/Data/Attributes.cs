@@ -9,5 +9,9 @@ namespace PuppetBot.Data;
 [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false)]
 internal class PredefinedDataAttribute : Attribute
 {
+    internal PredefinedDataAttribute()
+    {
 
+    }
 }
+

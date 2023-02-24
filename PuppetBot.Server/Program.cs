@@ -29,6 +29,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapHubs();
+app.MapSignalRHubs();
 
 app.Run();

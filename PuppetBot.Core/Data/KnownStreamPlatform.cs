@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace PuppetBot.Data;
 
-public sealed partial class StreamPlatform
+public partial struct StreamPlatform
 {
     [PredefinedData]
     public static StreamPlatform Youtube => new()
     {
         Name = "youtube",
-        URL = new("https://youtube.com")
+        ChannelURLFormat = "https://youtube.com/@{0}"
     };
 
     [PredefinedData]
     public static StreamPlatform Twitch => new()
     {
         Name = "twitch",
-        URL = new("https://twitch.tv")
+        ChannelURLFormat = "https://twitch.tv/{0}"
     };
+
 }
 

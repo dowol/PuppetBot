@@ -1,5 +1,7 @@
 ﻿
 
+using PuppetBot.Server.Hubs;
+
 namespace PuppetBot.Server.Utilities
 {
     public static class WebHostExtensions
@@ -12,9 +14,9 @@ namespace PuppetBot.Server.Utilities
             }.Uri.ToString());
         }
 
-        public static void MapHubs(this WebApplication app)
+        public static void MapSignalRHubs(this WebApplication app)
         {
-            
+            app.MapHub<ChattingHub>("/chat");
         }
     }
 }
